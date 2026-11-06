@@ -19,6 +19,8 @@ jobs:
         run: npm run eslint
       - name: Run npm test
         run: npm test
+      - name: Run npm build
+        run: npm run build
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
@@ -29,5 +31,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-      - name: Run npm build
-        run: npm run build
