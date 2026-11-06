@@ -5,10 +5,6 @@ const globals = require('globals')
 
 module.exports = [
   {
-    "env": {
-        "node": true,
-        "commonjs": true
-    },
     ignores: [
       'webpack.config.js',
       'eslint.config.js',
@@ -41,6 +37,12 @@ module.exports = [
   },
   {
     files: ['src/**/*.{js,jsx}', 'test/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
     plugins: {
       react,
       jest
