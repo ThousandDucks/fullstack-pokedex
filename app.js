@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5001
 
 app.use(express.static('dist'))
 
-// test 3
+// test 1
 const start = async () => {
   await app.listen(PORT)
   console.log(`server started on port ${PORT}`)
