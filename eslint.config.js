@@ -5,6 +5,10 @@ const globals = require('globals')
 
 module.exports = [
   {
+    "env": {
+        "node": true,
+        "commonjs": true
+    },
     ignores: [
       'webpack.config.js',
       'eslint.config.js',
