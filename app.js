@@ -14,7 +14,7 @@ app.get('/health', (req, res) => {
 
 app.use(express.static('dist'))
 
-// test 3
+// test for deployment
 const start = async () => {
   await app.listen(PORT)
   console.log(`server started on port ${PORT}`)
